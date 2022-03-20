@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>第一天</title>
+</head>
+
+<body>
+    <!-- 标题标签 -->
+    <h4>10天学习计划</h4>
+    <!-- 分段标签+倾斜+下划线+加粗+强制换行-->
+    <p>用三~四天时间将去年学习的全部内容以<em><ins>代码结合笔记</ins></em>的形式总结上传到<b>GitHup</b><br />
+        第一天目录计划总结，以及Html常用标签复习。<br />
+        第二天复习应用所学全部CSS相关知识，并完成页面注册代码应用<br />
+        第三天用盒子模型相关知识结合浮动、定位和布局知识制作一个页面<br>
+        第四天完成剩下的知识应用，都用代码敲一敲，之后开始将最近所学尚硅谷的视频总结应用，多写JS代码。</p>
+    <div>
+        <!--图像标签应用 -->
+        <!-- 同级路径 -->
+        <img src="hua1.jpg" alt="花" title="花朵" width="600" />
+        <!-- 上级路径 -->
+        <img src="../图tu/tu3.jpg" width="600">
+        <!-- 下一级路径 -->
+        <img src="小柠檬/hua8.jpg" width="600">
+        <!-- 绝对路径 -->
+        <img src="D:\Desktop\Lemon\柠檬家族\小柠檬\hua2.jpg" width="600"><br>
+        <!-- 外部链接-两个重要网站 -->
+        <a href="http://www.w3school.com.cn/" target="-blank">网站一W3C链接</a><br>
+        <a href="http://developer.mozilla.org/zh-CN/" target="-blank">网站二MDN链接</a><br>
+        <!-- 内部链接 -->
+        <a href="柠檬之植物总结.html" target="-blank">点开了解一些植物知识</a><br>
+        <!-- 网页元素链接 -->
+        <a href="D:\Desktop\Lemon\柠檬家族\hua7.jpg" target="-blank">一张秋英图片的链接</a><br>
+        <!-- 锚点链接 -->
+        <span><a href="#first">表格标签</a></span><br />
+        <span><a href="#second">列表标签</a></span><br />
+        <span><a href="#third">表单标签</a></span><br />
+        <span><a href="#fourth">lable标签</a></span><br />
+    </div>
+    <h4 id="first">表格标签</h4>
+    <table align="left" border="1" cellpadding="20" cellspacing="0" width="1000" height="400">
+        <tr>
+            <th>标签</th>
+            <th>属性</th>
+            <th>作用</th>
+        </tr>
+        <tr>
+            <td>align</td>
+            <td>left,right,center</td>
+            <td>表格对齐方式</td>
+        </tr>
+        <tr>
+            <td>border</td>
+            <td>数字</td>
+            <td>表格边框</td>
+        </tr>
+        <tr>
+            <td>cellpadding</td>
+            <td>像素值</td>
+            <td>单元格与内容间空白</td>
+        </tr>
+        <tr>
+            <td>cellspacing</td>
+            <td>像素值</td>
+            <td>单元格之间空白</td>
+        </tr>
+        <tr>
+            <td>wight</td>
+            <td>像素值或百分比</td>
+            <td>规定表格宽度</td>
+        </tr>
+        <tr>
+            <td>rowspan</td>
+            <td>数字</td>
+            <td>跨行合并</td>
+        </tr>
+        <tr>
+            <td>colspan</td>
+            <td>数字</td>
+            <td>跨列合并</td>
+        </tr>
+    </table>
+    </table><br>
+    <h4 id="second">列表标签</h4>
+    <!-- 列表标签-无序列表-有序标签-自定义标签 -->
+    <ul>
+        <li>无序列表ul</li>
+        <li>有序列表ol</li>
+        <li>自定义列表dl</li>
+    </ul>
+
+    <ol>
+        <li>无序列表前有小圆点，用list-style:none可删去圆点</li>
+        <li>有序列表前有数字排序</li>
+        <li>自定义列表中dd是对dt的解释</li>
+    </ol>
+
+    <dl>
+        <dt>无序列表ul可嵌套li</dt>
+        <dd>有序列表ol可嵌套li</dd>
+        <dd>自定义列表dl可嵌套dt/dd</dd>
+    </dl>
+
+    <h4 id="third">表单标签</h4>
+    <form action="jiade" method="get" name="no means">
+        姓名：<input type="text" /><br>
+        学校：<input type="text" value="河南理工大学" /><br>
+        学号：<input type="text" /><br>
+        密码：<input type="password" /><br>
+        性别：<input type="radio" name="sex" checked="checked" />男 <input type="radio" name="sex" />女<br>
+        爱好运动项目：<input type="checkbox" />跑步 <input type="checkbox" />羽毛球<input type="checkbox" /> 乒乓球<input
+            type="checkbox" /> 网球 <input type="checkbox" />足球<input type="checkbox" />篮球<br>
+        <br>
+        备注：<textarea rows="1" cols="40">注释内容</textarea><br>
+        内容无误：<input type="submit" value="确定" /><br>
+        <input type="checkbox"> 我&nbsp已&nbsp填&nbsp完<br>
+        我要注册：<input type="submit" value="注册" /><br>
+        <a href="#">我已经注册，立即登录</a><br>
+    </form>
+    <h4 id="fourth">label标签</h4>
+    生日：<select>
+        <option>--请选择年份--</option>
+        <option>2000</option>
+        <option>2001</option>
+        <option>2002</option>
+        <option>2003</option>
+        <option>2004</option>
+    </select>
+    <select>
+        <option>--请选择月份--</option>
+        <option>1</option>
+        <option>2</option>
+        <option>3</option>
+        <option>4</option>
+        <option>5</option>
+        <option>6</option>
+        <option>7</option>
+        <option>8</option>
+        <option>9</option>
+        <option>10</option>
+        <option>11</option>
+        <option>12</option>
+    </select>
+    <select>
+        <option>--请选择日期--</option>
+        <option>1</option>
+        <option>2</option>
+        <option>3</option>
+        <option>4</option>
+        <option>5</option>
+        <option>6</option>
+        <option>7</option>
+        <option>8</option>
+        <option>9</option>
+        <option>10</option>
+        <option>11</option>
+        <option>12</option>
+        <option>13</option>
+        <option>14</option>
+        <option>15</option>
+        <option>16</option>
+        <option>17</option>
+        <option>18</option>
+        <option>19</option>
+        <option>20</option>
+        <option>21</option>
+        <option>22</option>
+        <option>23</option>
+        <option>24</option>
+        <option>25</option>
+        <option>26</option>
+        <option>27</option>
+        <option>28</option>
+        <option>29</option>
+        <option>30</option>
+        <option>31</option>
+    </select>
+</body>
+
+</html> `
