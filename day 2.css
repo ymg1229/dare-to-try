@@ -1,0 +1,59 @@
+ /* 通配符选择器+文本缩进+行间距 */
+ * {
+    text-indent: 2em;
+    line-height: 26px;
+}   
+ h1 {
+    color: rgb(82, 80, 182);
+    font-size: 50px;
+    font-family: "Microsoft yahei";
+}
+
+p {
+    font: 400 16px "Microsoft yahei"
+}
+.one {
+    height: 490px;
+    width: 1250px;
+    background-color: rgb(197, 207, 152);
+    margin: 10px left;
+}
+div { 
+    text-indent: 0em;
+}
+div form { 
+    margin: 15px auto;
+    text-indent: 0em;
+}
+.one img {
+    margin-top: 20px ;
+    margin-left: 10px;
+    width: 300px;
+}
+.two { 
+    margin: 50px left;
+    background-color: rgb(216, 229, 238);
+    text-indent: none;
+    width: 600px;
+    height: 400px;
+    font-size: 16px;
+    border: 5px solid rgb(216, 198, 233);
+}
+a {
+    display: block;
+    /* 把a转换为块元素 */
+    width: 200px;
+    height: 40px;
+    background-color: rgb(67, 84, 99);
+    font-size: 14px;
+    color: #fff;
+    text-decoration: none;
+    /* 删除下划线 */
+    text-indent: 2em;
+    line-height: 40px;
+}
+
+/* 鼠标经过链接变换背景颜色伪类选择器 */
+a:hover {
+    background-color: rgb(238, 165, 31);
+}
