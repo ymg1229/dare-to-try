@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>第三天</title>
+    <style>
+        .abc {
+            height: 41px;
+            border-top: 3px solid rgb(204, 127, 55);
+            border-bottom: 1px solid rgb(231, 205, 205);
+            background-color: #fcfcfc;
+            line-height: 41px;
+        }
+
+        .abc a {
+            display: inline-block;
+            width: 25%;
+            /* padding: 0 20px; */
+            font-size: 12px;
+            color: #4c4c4c;
+            text-decoration: none;
+            text-align: center;
+        }
+
+        a:hover {
+            background-color: rgb(154, 204, 211);
+        }
+
+        h3 {
+            width: 300px;
+            height: 40px;
+            font-size: 20px;
+            font-weight: 400;
+            line-height: 40px;
+            background-image: url(2.png.svg);
+            background-repeat: no-repeat;
+            background-position: left center;
+            text-indent: 1.5em;
+        }
+
+        /* 后代选择器可以是任意基础选择器  */
+        .nav a {
+            display: inline-block;
+            width: 120px;
+            height: 58px;
+            background-color: rgb(173, 240, 229);
+            text-align: center;
+            line-height: 58px;
+            color: rgb(189, 24, 24);
+            text-decoration: none;
+        }
+
+        .good {
+            width: 900px;
+            height: 474px;
+            background-color: rgb(185, 74, 189);
+            margin: 100px auto;
+            text-align: center;
+            border: 10px solid rebeccapurple;
+        }
+
+        .good img {
+            width: 100%;
+        }
+
+        .one li {
+            float: right;
+            list-style: none;
+            height: 100px;
+            width: 200px;
+            background-color: aqua;
+            margin: 10px;
+        }
+
+        /* 权重 */
+        .one .last {
+            margin-bottom: o;
+        }
+
+        /* 后代选择器 */
+        ul li {
+            color: black;
+        }
+
+        /* 子选择器 */
+        ol>p {
+            color: rgb(95, 194, 209);
+        }
+
+        /* 并集选择器 */
+        /* span,
+        div {
+            color: rgb(225, 144, 157);
+        } */
+
+    </style>
+</head>
+
+<body>
+    <div class="abc"><a href="#">春花</a><a href="#">夏叶</a><a href="#">秋月</a><a href="#">冬雪</a></div>
+    <h3>看到花花走不动，热情似火 </h3>
+    <div class="nav"><a href="#">春种</a><a href="#">夏长</a><a href="#">秋收</a><a href="#">冬藏</a></div>
+    <div class="good"><img src="tu7.jpg" alt="hua"></div>
+    <ul class="one">
+        <li>啦</li>
+        <li>图</li>
+        <li>没</li>
+        <li>惜</li>
+        <li class="last">可</li>
+    </ul>
+    <ul>
+        <li>据说</li>
+        <li>我是</li>
+        <li>无序三</li>
+        <li>的</li>
+        <li>标签</li>
+    </ul>
+    <ol>
+        <li>据说</li>
+        <li>我是</li>
+        <li>有序三</li>
+        <li>的</li>
+        <li>标签</li>
+        <p>zhixiqinshu</p>
+    </ol>
+    <dl>
+        <dt>自定义名词向往的生活：</dt>
+        <dd>解释一每天都开心</dd>
+        <dd>解释二没有苦恼</dd>
+        <dd>解释三心情愉悦</dd>
+        <dd>解释四活得自在</dd>
+    </dl>
+    <form action="">
+        <ul>
+            <li>邮箱: <input type="email" /></li>
+            <li>网址: <input type="url" /></li>
+            <li>日期: <input type="date" /></li>
+            <li>日期: <input type="time" /></li>
+            <li>数量: <input type="number" /></li>
+            <li>号码: <input type="tel" /></li>
+            <li>搜索: <input type="search" /></li>
+            <li>颜色: <input type="color" /></li>
+            <!-- 点击提交按钮，验证表单  -->
+            <li><input type="submit" value="提交"></li>
+        </ul>
+    </form>
+</body>
+
+</html>
