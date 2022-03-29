@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>js基础2</title>
+    <!-- 可以将js代码编写到外部js文件中，然后通过script标签引入；
+    script标签一旦用于引入外部文件就不能在编写代码了了（会被忽略）
+    如果需要则可以在创建一个新的sCript标签用于编写内部代码 -->
+    <script src="script.js"></script>
+    <script> document.write("我可是多写了一个script标签才出现的")
+        // 字面量是一些不可改变的值，可直接使用，但一般不会直接使用字面量。
+        // 变量可以用来保存字面量，而且变量的值是可以任意改变的，更方便使用。
+        // 在js中使用关键字var来声明一个变量
+        // 声明变量a
+        var a;
+        // 为变量赋值
+        a = 123
+        console.log(a);
+        // 声明和赋值同时进行
+        var b = 456
+        console.log(b)
+        var age = 120
+        console.log(age)
+        // String字符串在JS中字符串需要使用引号引起来
+        // 双引号或单引号都可以，但是不要混用,且同样的引号不能嵌套
+        var str = 'hello';
+        str = '花儿说：“今天的风真不错。”';
+        console.log(str);
+        /*在字符串中我们可以使用\作为转义字符
+        当表示一些特殊符号时可以使用\进行转义
+        \" 表示 "
+        \' 表示 '
+        \n 表示 换行
+        \t 表示 制表符
+        \\ 表示 \
+        */
+
+        // 输出字面量 字符串str （带引号为字符串）
+        // alert("str")
+        //   输出变量 str
+        // alert(str)
+    </script>
+    <style>
+        h5 {
+            font-size: 16px;
+        }
+
+        h6 {
+            font-weight: 400;
+            font-size: 16px;
+        }
+    </style>
+</head>
+
+<body>
+    <h3>标识符</h3>
+    <p>在JS中所有的可以由我们自主命名的都可以称为是标识符<br>
+        例如：变量名、函数名、属性名都属于标识符<br>
+        命名一个标识符时需要遵守如下的规则:<br>
+        1.标识符中可以含有字母、数宇、、＄<br>
+        2.标识符不能以数字开头<br>
+        3.标识符不能是ES中的关键字或保留字<br>
+        4.标识符一般都采用驼峰命名法(首字母小写，每个单词的开头字母大写，其余字母小写)</p>
+    <h3>数据类型（字面量类型）</h3>
+    <h5>在js中一共有6种数据类型</h5>
+    <h6>String 字符串</h6>
+    <h6>Number 数值</h6>
+    <h6>Boolean 布尔值</h6>
+    <h6>Null 空值</h6>
+    <h6>Undefined 未定义</h6>
+    <h6>Object 对象</h6>
+    <p><b>String Number Boolean Nul1 Undefined属于基本数据类型
+            ;object厲于引用数据类型</b></p>
+</body>
+
+</html>
