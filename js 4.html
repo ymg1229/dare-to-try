@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>js基础4</title>
+    <script>
+        // 将其他的数据类型转换为Number:
+        /* 使用Number()函数：
+         1．如果是纯数字的字符串，则直接将其转换为数字
+         2.如果字符串中有非数字的内容，则转换为NaN
+         3.如果字符串是一个空串或者是一个全是空格的字符*/
+        // Boolean转化为数字 true 转成 1； false 转成 0
+
+        var a = "123";
+        // 调用Number()函数来将a转换为Number类型
+        a = Number(a);
+
+        a = false;
+        a = Number(a);
+
+        a = null;
+        a = Number(a);
+
+        a = undefined;
+        a = Number(a);
+
+        /* 用parseInt()函数将b/c转化为Number
+         parseInt()将一个宇符串转换为一个整数(可以将一个字符串中的有效的整数内容去出来)
+         parseFloat(把一个字符串转换为一个浮点数(获取有效小数)
+        如果对非String使用parseInt()或parseFloat(),它会先将其转换为String，然后再操作*/
+        var b = "123px"
+        b = parseInt(b);
+
+        var c = "123.456.789px";
+        c = parseFloat(c);
+
+        // 在js中，如果需要表示16进制的数宇需要以0x开头; 若表8进制数字则以0开头;2进制数字则需要以0b开头（但是不是所有的浏览器都支持）
+        // 十六进制：  a = 0x10; a = Oxff; a = OxCafe;
+        // 八进制： a = 070;     
+        // （像"070"这种宇符串，有些浏览器会当成8进制解析，有些会当成10进制解析）
+        // 二进制：a = 0b10;
+        // 可以在parseInt()中传递一个第二个参数，来指定数字的进制
+        // a = parseInt(a,8)
+
+        /*将其他的数据类型转换为Boolean可使用Boolean()函数
+        将数字转化为布尔值：除了0和NaN，其余的都是true
+        将字符串转化为布尔值：除了空串，其余的都是true
+        nul1和undefined都会转换为false,对象也会转换为true*/
+        //调用Boolean()函数来将d转换为布尔值
+        var d = 101112;
+        d = "文字"; //控制台显示"true"
+        d = " ";   //控制台显示"false"
+        d = Infinity;   //无穷，控制台显示"true"
+        d = Boolean(d);
+
+
+        console.log(a);
+        console.log(typeof a);
+        console.log(a);
+        console.log(typeof b);
+        console.log(b);
+        console.log(typeof c);
+        console.log(c);
+        console.log(typeof d);
+        console.log(d);
+    </script>
+</head>
+
+<body>
+
+</body>
+
+</html>
