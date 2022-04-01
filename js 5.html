@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>js 5基础</title>
+    <style>
+        h4 {
+            font-size: 20px;
+            font-weight: 500;
+            color: rgb(28, 81, 81);
+        }
+    </style>
+    <script src="js 5.js"></script>
+</head>
+
+<body>
+    <h2>
+        使用Boolean()函数将其他的数据类型转换为Boolean:
+    </h2>
+    <h4>数字到布尔,除了0和NaN,其余的都是true</h4>
+    <h4>字符串到布尔，除了空串,其余的都是true</h4>
+    <h4>nul1和undefined都会转换为false</h4>
+    <h2> 运算符也叫操作符可对一个或多个值进行运算并获取运算结果</h2>
+    <h4>typeof就是运算符,可以来获得一个值的类型,会将该值的类型以字符串的形式返回(number string boolean undefined object)</h4>
+    <h2>算数运算符</h2>
+    <h4>当对非Number类型的值进行运算时,会将这些值转换为Number后运算</h4>
+    <h4>任何值和NaN做运算都得NaN; + 可以对两个值进行加法运算，并将结果返回</h4>
+    <h4>如果对两个字符串进行加法运算，则会做拼串,会将两个字符串拼接为一个字符串并返回</h4>
+    <h4>任何的值和字符串做加法运算,都会先转换为字符串,我们可以利用此将数据类型转换为String</h4>
+    <h4>我们只需要为任意的数据类型＋一个""即可将其转换为String,这是一种隐式的类型转换,由浏览器自动完成实际上也调用String()函数</h4>
+    <h4>%取模运算（取余数）</h4>
+    <h4>任何值做 - * /运算时都会自动转换为Number</h4>
+    <h4>可以利用这一特点做隐式的类型转换,通过一个值 -0 *1 /1来将其转换为Number</h4>
+    <h3>一元运算符，只需要一个操作数</h3>
+    <h4>+正号,不会对数字产生任何影响</h4>
+    <h4>-负号,可以对数字进行负号的取反</h4>
+    <h4>对干非Number类型的值,它会将先转换为Number,然后在运算</h4>
+    <h4>可以对一个其他的数据类型使用+,来将其转换为number,原理和Number()函数一样</h4>
+    <h2>自增与自减</h2>
+    <h4>通过自增可以使变量在自身的基础上立即增加1,自增分我两种：后++(a++)和前++(++a)</h4>
+    <h4>区别:a++的值等于原变量的值（自增前的值）++a的值等于原变量(自增后的值),自减也同理</h4>
+</body>
+
+</html>
