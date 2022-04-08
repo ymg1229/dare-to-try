@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>js基础11</title>
+    <script>
+        for (var i = 0; i < 3; i++) {
+            alert(i);
+        }
+
+        //另一种写法：
+        /*var i = 0;
+        for (; i < 3;) {
+            alert(i++);
+        }*/
+
+        //for循环中无表达式，死循环：
+        /*for (; ;) {
+            alert("hello");
+        }*/
+
+        //打印1-50之间的数
+        var sum = 0;
+        for (var n = 1; n <= 50; n++) {
+            //判断i是否是奇数，不能被2整除的数就是奇数
+            if (1 % 2 != 0) {
+                console.log(n);
+                sum = sum + n;
+            }
+        }
+        console.log("奇数之和为：" + sum);
+    </script>
+</head>
+<h1>for循环</h1>
+<h4>for循环为我们提供了专门的位置用来放三个表达式：1. 初始化表达式;2.条件表达式;3 .更新表达式</h4>
+<h4>for循环的语法：<br>
+    for(1.初始化表达式;2.条件表达式;3.更新表达式){<br>
+    语句...<br>}<br>
+    for循环的执行流程：1.执行初始化表达式，初始化变量;2.执行条件表达式，判断是否执行循环,为true执行循环,为false终止;<br>
+    3.执行更新表达式，更新表达式执行完毕继续重复;for循环中的三个部分都可以省略，也可以写在外部.</h4>
+<h4>如果在for循环中不写任何的表达式，只写两个；此时循环是一个死循环会一直执行下去，慎用</h4>
+
+<body>
+
+</body>
+
+</html>
