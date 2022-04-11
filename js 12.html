@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>js基础12</title>
+    <script>
+        var sum = 0;
+        var count = 0;
+        //打印1-100之间的所有数
+        for (var i = 1; i <= 100; i++) {
+            //判断i是否是7的倍数
+            if (i % 7 == 0) {
+                //console.log(i);
+                sum += i;
+                count++;
+            }
+        }
+        console.log("总和为：" + sum);
+        console.log("总数为：" + count);
+
+        //打印所有的2位数
+        for (var n = 100; n < 1000; n++) {
+            //获取百位数字
+            var bai = parseInt(n / 100);
+            //获取十位的数字
+            var shi = parseInt((n - bai * 100) / 10);
+            //获取个位数字
+            var ge = n % 10;
+            console.log(n);
+        }
+        //判断i是否是水仙花数
+        if (bai * bai * bai + shi * shi * shi + ge * ge * ge == i) {
+            console.log(n);
+        }
+    </script>
+</head>
+
+<body>
+
+</body>
+
+</html>
