@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>js基础15</title>
+    <script>
+        // 向body中输出一个内容
+        // document.write("*****<br1>"）；
+
+        //通过一个for循环来输出图形
+        //这个for循环执行几次，图形的高度就是多少,它可以用来控制图形的高度
+        for (var i = 0; i < 5; i++) {
+            //document.write("*****<br />");
+            //在循环的内部再创建一个循环，用来控制图形的宽度,外部的for循环执行1次,内部的就会执行5次
+            for (var j = 0; j < 5 - i; j++) {   //j<5  j<i+1   j<5-i
+                document.write("*&nbsp;&nbsp;&nbsp;");
+            }
+            //输出一个换行
+            document.write("<br />");
+        }
+
+        //9*9乘法表
+        //创建外层循环，用来控制乘法表的高度
+        for (var i = 1; i <= 9; i++) {
+            //创建一个内层循环来控制图形的宽度
+            for (var j = 1; j <= i; j++) {
+                document.write("<span>" + j + "*" + i + "=" + i * j + "&nbsp;&nbsp;&nbsp;");
+
+            }
+            //输出一个换行
+            document.write("<br />");
+        }
+    </script>
+    <style>
+        span {
+            color: rgb(35, 159, 159);
+            width: 80px;
+        }
+    </style>
+</head>
+
+<body>
+
+</body>
+
+</html>
